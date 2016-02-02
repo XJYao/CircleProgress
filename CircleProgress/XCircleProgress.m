@@ -176,8 +176,8 @@
                     CGFloat pointImageViewHeight = 0;
                     
                     if (CGSizeEqualToSize(_pointImageSize, CGSizeZero)) {
-                        CGFloat pointImageViewWidth = _pointImageView.image.size.width;
-                        CGFloat pointImageViewHeight = _pointImageView.image.size.height;
+                        pointImageViewWidth = _pointImageView.image.size.width;
+                        pointImageViewHeight = _pointImageView.image.size.height;
                         
                         if (pointImageViewWidth > _indicatorWidth * 2) {
                             pointImageViewWidth = _indicatorWidth * 2;
