@@ -50,7 +50,7 @@
     _progress = 0;
     _indicatorGradient = YES;
     _indicatorRadius = 50;
-    _autoAdjustSize = NO;
+    _autoAdjustSize = YES;
     
     _indicatorAlpha = 1.0f;
     _indicatorBackgroundAlpha = 1.0f;
