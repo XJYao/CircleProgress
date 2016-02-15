@@ -50,6 +50,7 @@
     _progress = 0;
     _indicatorGradient = YES;
     _indicatorRadius = 50;
+    _autoAdjustSize = NO;
     
     _indicatorAlpha = 1.0f;
     _indicatorBackgroundAlpha = 1.0f;
@@ -95,13 +96,15 @@
 }
 
 - (void)setFrame:(CGRect)frame {
-    CGFloat width = MAX(frame.size.width, frame.size.height);
-    CGFloat minWidth = _indicatorRadius * 2 + _indicatorWidth;
-    if (width < minWidth) {
-        width = minWidth;
+    if (_autoAdjustSize) {
+        CGFloat width = MAX(frame.size.width, frame.size.height);
+        CGFloat minWidth = _indicatorRadius * 2 + _indicatorWidth;
+        if (width < minWidth) {
+            width = minWidth;
+        }
+        frame.size.width = width;
+        frame.size.height = width;
     }
-    frame.size.width = width;
-    frame.size.height = width;
     
     [super setFrame:frame];
     [self setNeedsLayout];
@@ -127,6 +130,10 @@
 
 - (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
+    
+    if (self.frame.size.width == 0 || self.frame.size.height == 0) {
+        return;
+    }
     
     CGContextRef context = UIGraphicsGetCurrentContext();
     
@@ -188,14 +195,6 @@
                     if (CGSizeEqualToSize(_pointImageSize, CGSizeZero)) {
                         pointImageViewWidth = _pointImageView.image.size.width;
                         pointImageViewHeight = _pointImageView.image.size.height;
-                        
-                        if (pointImageViewWidth > _indicatorWidth * 2) {
-                            pointImageViewWidth = _indicatorWidth * 2;
-                        }
-                        
-                        if (pointImageViewHeight > _indicatorWidth * 2) {
-                            pointImageViewHeight = _indicatorWidth * 2;
-                        }
                     } else {
                         pointImageViewWidth = _pointImageSize.width;
                         pointImageViewHeight = _pointImageSize.height;
