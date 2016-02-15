@@ -33,7 +33,7 @@
     [circleProgress setIndicatorBackgroundWidth:2];                         //进度条背景线条宽度
     
     [circleProgress setIndicatorGradient:YES];                              //进度条是否有渐变效果
-    [circleProgress setIndicatorRadius:40 - circleProgress.indicatorWidth]; //进度条半径
+    [circleProgress setIndicatorRadius:40];                                 //进度条半径
     [circleProgress setStartAngle:-M_PI_2];                                 //设置起始点角度
     
     [circleProgress setTextColor:[UIColor whiteColor]];                     //文字颜色
@@ -70,9 +70,9 @@
 
 - (void)updateFrame {
     //设置该控件的frame
-    CGFloat width = (circleProgress.indicatorRadius + circleProgress.indicatorWidth) * 2;
-    CGFloat height = width;
-    [circleProgress setFrame:CGRectMake(0, 0, width, height)];
+//    CGFloat width = (circleProgress.indicatorRadius + circleProgress.indicatorWidth / 2.0) * 2;
+//    CGFloat height = width;
+    [circleProgress setFrame:CGRectMake(0, 0, 30, 30)];
     [circleProgress setCenter:self.view.center];
 }
 

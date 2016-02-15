@@ -95,6 +95,14 @@
 }
 
 - (void)setFrame:(CGRect)frame {
+    CGFloat width = MAX(frame.size.width, frame.size.height);
+    CGFloat minWidth = _indicatorRadius * 2 + _indicatorWidth;
+    if (width < minWidth) {
+        width = minWidth;
+    }
+    frame.size.width = width;
+    frame.size.height = width;
+    
     [super setFrame:frame];
     [self setNeedsLayout];
 }
