@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56B54B121C71873F005C08EF /* mine_task_icon_luminouspoint.png in Resources */ = {isa = PBXBuildFile; fileRef = 56B54B101C71873F005C08EF /* mine_task_icon_luminouspoint.png */; };
 		56D52ECB1C59B5A8008CB906 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D52ECA1C59B5A8008CB906 /* main.m */; };
 		56D52ECE1C59B5A8008CB906 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D52ECD1C59B5A8008CB906 /* AppDelegate.m */; };
 		56D52ED11C59B5A8008CB906 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D52ED01C59B5A8008CB906 /* ViewController.m */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		56B54B101C71873F005C08EF /* mine_task_icon_luminouspoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mine_task_icon_luminouspoint.png; sourceTree = "<group>"; };
 		56D52EC61C59B5A8008CB906 /* CircleProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D52ECA1C59B5A8008CB906 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		56D52ECC1C59B5A8008CB906 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		56D52EC81C59B5A8008CB906 /* CircleProgress */ = {
 			isa = PBXGroup;
 			children = (
+				56B54B101C71873F005C08EF /* mine_task_icon_luminouspoint.png */,
 				56D52EFC1C59B5B3008CB906 /* XCircleProgress.h */,
 				56D52EFD1C59B5B3008CB906 /* XCircleProgress.m */,
 				56D52ECC1C59B5A8008CB906 /* AppDelegate.h */,
@@ -250,6 +253,7 @@
 			files = (
 				56D52ED91C59B5A8008CB906 /* LaunchScreen.storyboard in Resources */,
 				56D52ED61C59B5A8008CB906 /* Assets.xcassets in Resources */,
+				56B54B121C71873F005C08EF /* mine_task_icon_luminouspoint.png in Resources */,
 				56D52ED41C59B5A8008CB906 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,6 +508,7 @@
 				56D52EF51C59B5A8008CB906 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56D52EF61C59B5A8008CB906 /* Build configuration list for PBXNativeTarget "CircleProgressTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +517,7 @@
 				56D52EF81C59B5A8008CB906 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56D52EF91C59B5A8008CB906 /* Build configuration list for PBXNativeTarget "CircleProgressUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +526,7 @@
 				56D52EFB1C59B5A8008CB906 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

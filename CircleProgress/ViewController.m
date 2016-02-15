@@ -39,7 +39,7 @@
     
     [circleProgress setTextColor:[UIColor whiteColor]];                     //文字颜色
     [circleProgress setTextFont:[UIFont boldSystemFontOfSize:17]];          //文字字体
-    [circleProgress.pointImageView setImage:nil];                           //进度条末端图片
+    [circleProgress.pointImageView setImage:[UIImage imageNamed:@"mine_task_icon_luminouspoint"]];  //进度条末端图片
     [circleProgress setPointImageSize:CGSizeZero];                          //进度条末端图片大小
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
