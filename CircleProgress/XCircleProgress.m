@@ -62,6 +62,8 @@
     _textFont = [UIFont boldSystemFontOfSize:17];
     _text = @"";
     _pointImageSize = CGSizeZero;
+    
+    _startAngle = - M_PI_2;
 }
 
 - (void)registerForKVO {
@@ -120,7 +122,7 @@
     
     CGContextRef context = UIGraphicsGetCurrentContext();
     
-    CGFloat startAngle = - M_PI_2;
+    CGFloat startAngle = _startAngle;
 
     //draw background
     if (_indicatorBackgroundColor) {

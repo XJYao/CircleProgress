@@ -34,6 +34,7 @@
     
     [circleProgress setIndicatorGradient:YES];                              //进度条是否有渐变效果
     [circleProgress setIndicatorRadius:40 - circleProgress.indicatorWidth]; //进度条半径
+    [circleProgress setStartAngle:-M_PI_2];                                 //设置起始点角度
     
     [circleProgress setTextColor:[UIColor whiteColor]];                     //文字颜色
     [circleProgress setTextFont:[UIFont boldSystemFontOfSize:17]];          //文字字体

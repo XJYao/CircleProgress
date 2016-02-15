@@ -13,6 +13,7 @@
 @property (nonatomic, assign)   CGFloat     progress;                   //进度
 @property (nonatomic, assign)   BOOL        indicatorGradient;          //进度条是否有渐变效果
 @property (nonatomic, assign)   CGFloat     indicatorRadius;            //进度条半径
+@property (nonatomic, assign)   CGFloat     startAngle;                 //起始点角度，水平向右为0°，默认-π/2。
 
 @property (nonatomic, strong)   UIColor *   indicatorColor;             //进度条颜色
 @property (nonatomic, strong)   UIColor *   indicatorBackgroundColor;   //进度条背景线条颜色
